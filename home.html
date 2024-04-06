@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+</head>
+<body>
+    <div class="banner">
+
+        <div class="navbar">
+            <div class="logo">MY PORTFOLIO</div>
+            <ul>
+                <li><a href="#home"> HOME </a></li>
+                <li><a href="#info"> INFO </a></li>
+                <li><a href="#skills"> SKILLS </a></li>
+                <li><a href="#experience"> EXPERIENCE </a></li>
+                <li><a href="#gallery"> GALLERY </a></li>
+                <li><a href="#footer"> FOOTER </a></li>
+    
+            </ul>
+        </div>
+    
+        <div class="content">
+            <h1> WELCOME TO MY PORTFOLIO </h1>
+            <p>“Life isn't about finding yourself. Life is about creating yourself.”
+                ― George Bernard Shaw </p>
+    
+    
+        <div class="button">
+            <button type="button"><span></span>READ MORE </button>
+        </div>
+    </div>
+    </div>
+
+    <div class="blog-section" id="info">
+        <div class="section-content">
+    
+            <div class="title">
+                <h2>MY INFORMATION</h2>
+           
+            <div class="info">
+                <p>NAME: JHASMIN ALYSSA D. BOTEA</p>
+                <p>AGE: 20 YEARS OLD</p>
+                <p>BIRTHDAY: JANUARY, 31,2003</p>
+                <p>PLACE OF BIRTH: Bailan Hospital</p>
+                <p>FAVORITE COLOR: BLACK & PURPLE</p>
+                <p>FAVORITE FOODS: ADOBO & SINIGANG</p>
+            </div>
+        </div>
+                    
+    
+    <div class="skills-section" id="skills">
+        <div class="heading">
+            <h1>SKILLS AND EXPERIENCES</h1>
+            <p>“Make each day your masterpiece.” — John Wooden</p>
+        </div>
+
+        <div class="container">
+            <section class="skills">
+                <div class="skills-image">
+                    <img src="img/skills.png">
+                </div>
+
+                <div class="experience" id="experience">
+                    <h2>MY EXPERIENCES</h2>
+                    <p>EXPERIENCE- The first 20 years of our lives are crazy.
+                        
+                        We grow from helpless little babies to educated adults with a heavy degree of responsibility.
+                        
+                        Within these first 20 years are hundreds of first experiences, pains, growths, laughs, wonders, that slowly begin to shape our lives for the future, and there are many life lessons learned along the way.
+                        
+                        The mindset that people begin to create for themselves during these years can waver greatly, and either push them towards what they want, or gradually away from it.
+                        
+                        As humans we are most susceptible to drastic changes, which begs the point of this article.</p>
+
+                        <a href="#" class="read-more"> Read More</a>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="gallery" id="gallery">
+
+        <input type="radio" name="photos" id="check1" checked>
+        <input type="radio" name="photos" id="check2" >
+        <input type="radio" name="photos" id="check3" >
+        <input type="radio" name="photos" id="check4" >
+
+        <div class="gallery-container">
+            <h1>PHOTO GALLERY</h1>
+            <div class="top-content">
+                <h3>Photo Gallery</h3>
+                <label for="check1">All Photos</label>
+                <label for="check2"> Family</label>
+                <label for="check3"> Friends</label>
+                <label for="check4"> Man</label>
+            </div>
+
+            <div class="photo-gallery">
+
+                <div class="pic Family">
+                    <img src="img/fam.jpg">
+                </div>
+
+                <div class="pic Friends">
+                    <img src="img/friends.jpg">
+                </div>
+
+                <div class="pic Man">
+                    <img src="img/main.jpg">
+                </div>
+                
+                <div class="pic Family">
+                    <img src="img/mama.jpg">
+                </div>
+
+                <div class="pic Friends">
+                    <img src="img/frnd2.jpg">
+                </div>
+
+                <div class="pic Man">
+                    <img src="img/man2.jpg">
+                </div>
+
+                <div class="pic Family">
+                    <img src="img/papa.jpg">
+                </div>
+
+                <div class="pic Friends">
+                    <img src="img/frnd3.jpg">
+                </div>
+
+                <div class="pic Man">
+                    <img src="img/man3.jpg">
+                </div>
+
+                <div class="pic Family">
+                    <img src="img/ml.jpg">
+                </div>
+
+                <div class="pic Friends">
+                    <img src="img/frnd4.jpg">
+                </div>
+
+                <div class="pic Man">
+                    <img src="img/man4.jpg">
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+    <div class="footer-basic" id="footer">
+        <footer>
+            <div class="social">
+                <a href="#"><i class="fa fa-facebook-official"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-youtube-play"></i></a>
+            </div>
+            <p class="copyright">Manage and Created by JHASMIN @ 2023</p>
+        </footer>
+    </div>
+
+    <a href="#home" id="myBtn" title="Go to top"> TOP</a>
+
+    <script>
+        let mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction(){
+    if (document.body.scrollTop > 20 || document.documentElemnt.scrollTop > 20){
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+ }
+    </script>
+    
+</body>
+</html>
